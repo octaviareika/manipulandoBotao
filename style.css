@@ -1,0 +1,65 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color:  #ce8989;
+}
+
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Isso faz com que o corpo ocupe toda a altura da janela de visualização */
+        margin: 0; /* Isso remove a margem padrão ao redor do corpo */
+        flex-direction: column-reverse;
+
+}
+.titulo {
+    padding: 20px;
+}
+.quadrado {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: var(--cor-principal);
+    
+}
+
+[data-contexto="cor-rosa"] {
+    background-color: rgb(128, 0, 79);
+}
+
+[data-contexto="cor-verde"]{
+    --cor-principal: green;
+
+}
+
+[data-contexto="cor-azul"]{
+    --cor-principal: blue;
+
+}
+
+[data-contexto="cor-vermelha"]{
+    --cor-principal: red;
+
+}
+
+.divisao{
+    
+}
+
+.verde {
+
+    margin: 20px;
+    background-color: green;
+}
+
+.azul {
+    margin: 20px;
+    background-color: blue;
+}
+
+.vermelho {
+    margin: 20px;
+    background-color: red;
+}
